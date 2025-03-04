@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import { List, X } from "@phosphor-icons/react";
+
+//* components
 import Button from "../../atoms/Button";
+
+//* images & metadata
+import logo from "../../assets/durchex.svg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,7 +17,7 @@ const Header = () => {
   return (
     <div className="relative flex justify-between items-center mb-6 px-4 md:px-0">
       <img
-        src="src/assets/durchex.svg"
+        src={logo}
         alt="Durchex Logo"
         className="w-32 md:w-auto"
       />

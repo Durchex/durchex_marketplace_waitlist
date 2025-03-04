@@ -7,6 +7,9 @@ import FeatureCarousel from "../../organisms/landing/FeatureCarousel";
 import CountdownTimer from "../../organisms/landing/CountdownTimer";
 import Footer from "../../organisms/landing/Footer";
 
+//* images & metadata
+import globe from '../../assets/globe.svg'
+
 const LandingRoot = () => {
   return (
     <div className="h-[750px] bg-[url('/src/assets/mask.png')] bg-cover bg-center px-6 md:px-12 lg:px-24 pt-6">
@@ -36,9 +39,8 @@ const LandingRoot = () => {
         <Button>Join Waitlist</Button>
       </div>
 
-
       <div className="flex justify-center items-center mb-10 md:mb-20">
-        <img src="src/assets/globe.svg" alt="gl_be" />
+        <img src={globe} alt="gl_be" />
       </div>
 
       <div className="bg-[url('/src/assets/violet.png')] bg-cover bg-center py-12 mb-24 md:mb-36">

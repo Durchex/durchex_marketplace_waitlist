@@ -1,15 +1,18 @@
 import React from "react";
 import { EnvelopeSimpleOpen, Phone } from "@phosphor-icons/react";
 
+//* images & metadata
+import logo from "../../assets/durchex.svg";
+import brand from "../../assets/brand.svg";
+
 const Footer = () => {
   return (
     <footer className="pt-10">
       <div className="md:max-w-9xl md:mx-auto md:px-4 grid grid-cols-1 md:grid-cols-3 gap-8 mb-36">
-        {/* Left Section */}
         <div>
           <div className="flex items-center mb-4">
             <img
-              src="/src/assets/durchex.svg"
+              src={logo}
               alt="DURCHEX Logo"
               className=""
             />
@@ -40,7 +43,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Right Section */}
         <div>
           <h3 className="text-white font-semibold mb-4">Features</h3>
           <ul className="text-[#CAC7D1] space-y-5">
@@ -52,7 +54,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex justify-center">
-        <img src="src/assets/brand.svg" alt="DURCHEX" />
+        <img src={brand} alt="DURCHEX" />
       </div>
     </footer>
   );
